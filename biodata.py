@@ -1,13 +1,18 @@
-nama_depan = "anisa"
-nama_belakang = 'qomara'
-nama_lengkap = nama_depan +  '' + nama_belakang
-usia = '18'
-alamat = 'belinyu'
-kata_mutiara= "don't judge a book by it's cover"
+# Program to collect and display user biodata
 
-print(nama_lengkap, '(' + usia+')',',', 'dari', alamat,',kata mutiara',kata_mutiara)
+def main():
+    # Collect user information
+    name = input("Masukkan nama Anda: ")
+    age = input("Masukkan usia Anda: ")
+    address = input("Masukkan alamat Anda: ")
+    hobbies = input("Masukkan hobi Anda (pisahkan dengan koma): ")
 
-print('\nTipe dari nama_lengkap:', type(nama_lengkap))
-print('Tipe dari usia:',type(usia))
-print('Tipe dari alamat:', type(alamat))
-print('Tipe dari kata_mutiara:',type(kata_mutiara))
+    # Format and display the biodata
+    print("\n--- Biodata Anda ---")
+    print(f"Nama: {name}")
+    print(f"Usia: {age} tahun")
+    print(f"Alamat: {address}")
+    print(f"Hobi: {hobbies}")
+
+if __name__ == "__main__":
+    main()
